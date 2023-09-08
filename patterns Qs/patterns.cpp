@@ -71,7 +71,7 @@ int main() {
       cout<<" ";
     }
     for(int col=0; col<row+1; col++){
-      if(col==0 || col==n-col || row==n-1){
+      if(col==0 || col==col-n || row==n-1){
         cout<<"* ";
       }else{
         cout<<" ";
