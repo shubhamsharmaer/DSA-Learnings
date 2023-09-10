@@ -14,6 +14,10 @@ int decimaltobinary(int n){
     return binaryno;
 }
 
+int decimaltobinary2(int n){
+    
+}
+
 // TODO: add decimaltobinary() method 2
 
 int main(){
