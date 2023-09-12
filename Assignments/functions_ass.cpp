@@ -57,10 +57,26 @@ using namespace std;
     }
 }*/
 
+// Digits of an Integer
+int printdigits()
+{
+    int myint;
+    cout << "Enter any integer: ";
+    cin >> myint;
+    int count = 0;
+    while (myint != 0)
+    {
+        myint = myint / 10;
+        count++;
+    }
+    cout << "No. of digits: " << count;
+}
+
 int main()
 {
     // areaofcircle();
     // factorialofnum();
     // primenum();
+    printdigits();
     return 0;
 }
