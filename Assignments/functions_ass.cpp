@@ -67,16 +67,33 @@ int printdigits()
     while (myint != 0)
     {
         myint = myint / 10;
-        count++;
     }
-    cout << "No. of digits: " << count;
+    cout << "No. of digits: ";
 }
+
+// Return a Num using Digits
+int return_num()
+{
+    int size;
+    cout << "enter num of digits to be inserted: ";
+    cin >> size;
+    int arr[size];
+    cout << endl;
+    cout << "enter some digits: ";
+
+    for (int i = 0; i < size; i++)
+    {
+        cin >> arr[i];
+        cout << arr[i];
+    }
+};
 
 int main()
 {
     // areaofcircle();
     // factorialofnum();
     // primenum();
-    printdigits();
+    // printdigits();
+    // return_num();
     return 0;
 }
