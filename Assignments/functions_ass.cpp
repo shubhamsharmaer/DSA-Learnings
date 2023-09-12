@@ -58,7 +58,7 @@ using namespace std;
 }*/
 
 // Digits of an Integer
-int printdigits()
+/*int printdigits()
 {
     int myint;
     cout << "Enter any integer: ";
@@ -69,10 +69,10 @@ int printdigits()
         myint = myint / 10;
     }
     cout << "No. of digits: ";
-}
+}*/
 
 // Return a Num using Digits
-int return_num()
+/*int return_num()
 {
     int size;
     cout << "enter num of digits to be inserted: ";
@@ -86,8 +86,29 @@ int return_num()
         cin >> arr[i];
         cout << arr[i];
     }
-};
+}*/
 
+// Kilometer to Miles conversion
+float kilotomiles()
+{
+    float kilometer;
+    const float miles = 0.621371;
+    cout << "enter kilometers: ";
+    cin >> kilometer;
+    if (kilometer == 0)
+    {
+        cout << "zero can't be converted";
+    }
+    else if (kilometer < 0)
+    {
+        cout << "-ve values can't be accepted!";
+    }
+    else
+    {
+        float result = kilometer * miles;
+        cout << result << " miles in " << kilometer << " km";
+    }
+}
 int main()
 {
     // areaofcircle();
@@ -95,5 +116,6 @@ int main()
     // primenum();
     // printdigits();
     // return_num();
+    kilotomiles();
     return 0;
 }
