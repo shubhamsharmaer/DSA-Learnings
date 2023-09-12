@@ -89,7 +89,7 @@ using namespace std;
 }*/
 
 // Kilometer to Miles conversion
-float kilotomiles()
+/*float kilotomiles()
 {
     float kilometer;
     const float miles = 0.621371;
@@ -108,7 +108,8 @@ float kilotomiles()
         float result = kilometer * miles;
         cout << result << " miles in " << kilometer << " km";
     }
-}
+}*/
+
 int main()
 {
     // areaofcircle();
@@ -116,6 +117,6 @@ int main()
     // primenum();
     // printdigits();
     // return_num();
-    kilotomiles();
+    // kilotomiles();
     return 0;
 }
