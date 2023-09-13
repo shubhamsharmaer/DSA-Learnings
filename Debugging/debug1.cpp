@@ -9,6 +9,7 @@ int main()
 {
     char c;
     cin >> c;
+    // NOTES: Solved by Changing || to &&
     if ('a' <= c && c <= 'z')
     {
         cout << 0;
