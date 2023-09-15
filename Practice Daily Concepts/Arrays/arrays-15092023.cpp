@@ -5,7 +5,24 @@ using namespace std;
 bool found = 1;
 bool notfound = 0;
 
-// min and max int values
+// reverse an array
+void reversearr(int arr[], int n)
+{
+    int start = 0;
+    int end = n - 1;
+
+    while (start <= end)
+    {
+        swap(arr[start], arr[end]);
+        start++;
+        end--;
+    }
+    cout << "reversed array: ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+}
 
 // find min and max
 void findminmax(int arr[], int size)
@@ -56,13 +73,25 @@ int main()
     // int arr[] = {0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0};
     // count01(arr, n);
 
-    int size = 7;
-    int arr[] = {23, 48, 22, 45, 19, 49, 24};
-    for (int i = 0; i < size; i++)
+    // int size = 7;
+    // int arr[] = {23, 48, 22, 45, 19, 49, 24};
+    // for (int i = 0; i < size; i++)
+    // {
+    //     cout << arr[i] << " ";
+    // }
+    // cout << endl;
+    // findminmax(arr, size);
+
+    int n = 6;
+    int arr[] = {34, 23, 11, 35, 67, 22};
+    for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
     }
+
     cout << endl;
-    findminmax(arr, size);
+
+    reversearr(arr, n);
+
     return 0;
 }
