@@ -71,7 +71,7 @@ int main()
 {
     // int n = 16;
     // int arr[] = {0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0};
-    // count01(arr, n);
+    count01(arr, n);
 
     // int size = 7;
     // int arr[] = {23, 48, 22, 45, 19, 49, 24};
@@ -80,17 +80,15 @@ int main()
     //     cout << arr[i] << " ";
     // }
     // cout << endl;
-    // findminmax(arr, size);
+    findminmax(arr, size);
 
-    int n = 6;
-    int arr[] = {34, 23, 11, 35, 67, 22};
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i] << " ";
-    }
-
-    cout << endl;
-
+    // int n = 6;
+    // int arr[] = {34, 23, 11, 35, 67, 22};
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cout << arr[i] << " ";
+    // }
+    // cout << endl;
     reversearr(arr, n);
 
     return 0;
