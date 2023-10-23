@@ -1,12 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// main logic
-// void quicklogic(int arr[], int i, int j, int pivot){
-//     pivot = arr.size()-1;
-
-// }
-
 // quick sort by recursion
 void quicksort(int arr[], int start, int end)
 {
@@ -37,9 +31,6 @@ void quicksort(int arr[], int start, int end)
     // break arr
     quicksort(arr, start, i - 1);
     quicksort(arr, i + 1, end);
-
-    // call logic function
-    // quicklogic(arr, i, j, pivot);
 }
 
 int main()
