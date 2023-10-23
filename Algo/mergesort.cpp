@@ -3,10 +3,10 @@
 using namespace std;
 
 // merge logic funtion
-void mergelogic(int nums[], int s, int e)
+void mergelogic(int nums[], int s, int mid, int e)
 {
 
-    int mid = (s + e) / 2;
+    mid = (s + e) / 2;
     // define length of
     // left arr
     int leftlen = mid - s + 1;
@@ -14,9 +14,9 @@ void mergelogic(int nums[], int s, int e)
     int rightlen = e - mid;
 
     // create left arr
-    int leftarr[leftlen];
+    vector<int> leftarr(leftlen);
     // create right arr
-    int rightarr[rightlen];
+    vector<int> rightarr(rightlen);
 
     // copy left arr using for loop & k variable
     int k = s;
@@ -41,21 +41,33 @@ void mergelogic(int nums[], int s, int e)
     // mid position
     int midindx = s;
 
-    // while loop for comparing both arr's element and         merge into original arr
+    // while loop for comparing both arr's element and merge into original arr
     while (leftindx < leftlen && rightindx < rightlen)
     {
         if (leftarr[leftindx] < rightarr[rightindx])
         {
             nums[midindx] = leftarr[leftindx];
-            midindx++;
             leftindx++;
         }
         else
         {
             nums[midindx] = rightarr[rightindx];
-            midindx++;
             rightindx++;
         }
+        midindx++;
+    }
+    // while loop for adding left element, if any in left or right array
+    while (leftindx < leftlen)
+    {
+        nums[midindx] = leftarr[leftindx];
+        midindx++;
+        leftindx++;
+    }
+    while (rightindx < rightlen)
+    {
+        nums[midindx] = rightarr[rightindx];
+        midindx++;
+        rightindx++;
     }
 }
 
@@ -64,7 +76,9 @@ void merge(int nums[], int s, int e)
 {
     // base case
     if (s >= e)
+    {
         return;
+    }
     int mid = (s + e) / 2;
 
     // break arry
@@ -72,7 +86,7 @@ void merge(int nums[], int s, int e)
     merge(nums, mid + 1, e);
 
     // recursive call
-    mergelogic(nums, s, e);
+    mergelogic(nums, s, mid, e);
 }
 
 int main()
