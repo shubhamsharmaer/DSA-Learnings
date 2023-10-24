@@ -1,6 +1,18 @@
 #include <iostream>
 using namespace std;
 
+/*NOTES: Approch quicksort()
+1. Take 3 pointers.
+ -> at start, -> at start-1, -> end.
+2. base case -> if(start >= end)
+3. loop for traverse, (j < pivot);
+4. inside loop, check if arr[j] < arr[pivot], then i++; swap i & j;
+5. increment j, swap arr[i] & arr[pivot];
+6. break the arr in two halfs
+ -> quicksort(start, i-1);
+ -> quicksort(i+1, end);
+ */
+
 // quick sort by recursion
 void quicksort(int arr[], int start, int end)
 {
