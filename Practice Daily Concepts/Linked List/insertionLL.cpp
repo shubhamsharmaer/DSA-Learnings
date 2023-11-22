@@ -31,9 +31,9 @@ int countlen(Node *head)
     return count;
 }
 
-void printLL(Node *Head)
+void printLL(Node *head)
 {
-    Node *temp = Head;
+    Node *temp = head;
 
     while (temp != NULL)
     {
@@ -90,7 +90,7 @@ void insertatposition(Node *&head, Node *&tail, int data, int position)
     Node *newNode = new Node(data);
     int length = countlen(head);
 
-    // case 1: if pos < 1
+    // case 1: if pos < 1 or pos > n
     if (position < 1 || position > length)
     {
         cout << "cannot insert";
@@ -102,7 +102,8 @@ void insertatposition(Node *&head, Node *&tail, int data, int position)
         insertathead(head, tail, data);
     }
     // case 3: if pos == n
-    else if (position == length)
+    // NOTES: use 'length + 1' not 'length' to insert b/w last & 2nd last
+    else if (position == length + 1)
     {
         insertattail(head, tail, data);
     }
