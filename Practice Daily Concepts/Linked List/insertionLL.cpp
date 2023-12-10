@@ -90,24 +90,18 @@ void insertatposition(Node *&head, Node *&tail, int data, int position)
     Node *newNode = new Node(data);
     int length = countlen(head);
 
-    // case 1: if pos < 1 or pos > n
-    if (position < 1 || position > length)
-    {
-        cout << "cannot insert";
-        return;
-    }
-    // case 2: if pos = 1
-    if (position == 1)
-    {
-        insertathead(head, tail, data);
-    }
-    // case 3: if pos == n
-    // NOTES: use 'length + 1' not 'length' to insert b/w last & 2nd last
-    else if (position == length + 1)
+    // case 1: if pos > length or equal to length + 1
+    // in the both cases insert at tail
+    if (position > length)
     {
         insertattail(head, tail, data);
     }
-    // case 4: in the middle
+    // case 2: if pos = 1 or < 1
+    if (position <= 1)
+    {
+        insertathead(head, tail, data);
+    }
+    // case 3: in the middle
     else
     {
         // step 1: create node
