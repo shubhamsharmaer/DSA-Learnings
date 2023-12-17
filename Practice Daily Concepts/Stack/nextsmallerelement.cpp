@@ -11,7 +11,7 @@
 #include <vector>
 using namespace std;
 
-vector<int> nextsmallerelement(int *arr, int size, vector<int> &ans)
+vector<int> nextsmallerelement(int *arr, int size, vector<int> &next)
 {
     stack<int> st;
     st.push(-1);
@@ -24,10 +24,29 @@ vector<int> nextsmallerelement(int *arr, int size, vector<int> &ans)
         {
             st.pop();
         }
-        ans[i] = st.top();
+        next[i] = st.top();
         st.push(curr);
     }
-    return ans;
+    return next;
+}
+
+vector<int> prevtsmallerelement(int *arr, int size, vector<int> &prev)
+{
+    stack<int> st;
+    st.push(-1);
+
+    for (int i = 0; i < size; i++)
+    {
+        int curr = arr[i];
+
+        while (st.top() >= curr)
+        {
+            st.pop();
+        }
+        prev[i] = st.top();
+        st.push(curr);
+    }
+    return prev;
 }
 
 int main()
@@ -35,10 +54,18 @@ int main()
     int arr[5] = {8, 4, 6, 2, 3};
     int size = 5;
 
-    vector<int> ans(size);
-    ans = nextsmallerelement(arr, size, ans);
-    cout << "smaller elements are: ";
-    for (auto i : ans)
+    vector<int> next(size);
+    next = nextsmallerelement(arr, size, next);
+    cout << "next smaller elements: ";
+    for (auto i : next)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
+    vector<int> prev(size);
+    prev = nextsmallerelement(arr, size, prev);
+    cout << "previous smaller elements: ";
+    for (auto i : prev)
     {
         cout << i << " ";
     }
