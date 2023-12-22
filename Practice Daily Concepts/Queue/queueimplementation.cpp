@@ -26,12 +26,14 @@ public:
             cout << "queue is full!" << endl;
             return;
         }
+        // empty case
         else if (front == -1 && rear == -1)
         {
             rear++;
             front++;
             arr[rear] = val;
         }
+        // normal case
         else
         {
             rear++;
@@ -55,7 +57,7 @@ public:
         }
         else
         {
-            // Normal case
+            // normal case
             arr[front] = -1;
             front++;
         }
