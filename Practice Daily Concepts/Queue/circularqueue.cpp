@@ -20,7 +20,7 @@ public:
     void push(int val)
     {
         // Overflow condition
-        if (front == 0 && rear == size - 1)
+        if ((front == 0 && rear == size - 1) || (rear == front - 1))
         {
             cout << "Overflow Condition!" << endl;
         }
