@@ -58,7 +58,8 @@ public:
         else if (rear == front)
         {
             arr[front] = -1;
-            front++;
+            front = -1;
+            rear = -1;
         }
         // circular case
         else if (front == size - 1)
