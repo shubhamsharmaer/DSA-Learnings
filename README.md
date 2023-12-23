@@ -19,7 +19,7 @@ Welcome to my Data Structures and Algorithms (DSA) learning repository! 🚀 Her
 
 In this repository, I share my DSA learning journey, covering various topics, algorithms, and problem-solving techniques. Follow along with my progress as I explore the world of data structures and algorithms.
 
-## Repository Structure 📂
+## Repository Structure 📂 {#repository-structure}
 
 - **Algo**: Contains algorithm implementations.
 - **Assignments**: Weekly assignments organized by week.
@@ -28,7 +28,7 @@ In this repository, I share my DSA learning journey, covering various topics, al
 - **Patterns Qs**: Solutions to pattern-based questions.
 - **Practice Daily Concepts**: Daily practice problems categorized by concepts.
 
-## Daily Concepts 📆
+## Daily Concepts 📆 {#daily-concepts}
 
 I dedicate time each day to delve into different DSA concepts. Here are the key topics I'm covering:
 
@@ -38,33 +38,33 @@ I dedicate time each day to delve into different DSA concepts. Here are the key 
 - **Stack**
 - ...and more to be covered!
 
-## Assignments 📝
+## Assignments 📝 {#assignments}
 
 Weekly assignments to solidify my understanding and apply theoretical knowledge to practical problems. Check out each week's folder for details.
 
-## Debugging 🐞
+## Debugging 🐞 {#debugging}
 
 Debugging is an essential skill. I share my debugging exercises organized by week, showcasing how I tackle and solve common DSA-related issues.
 
-## Patterns Qs 🔍
+## Patterns Qs 🔍 {#patterns-qs}
 
 Explore my solutions to pattern-based questions, a crucial aspect of algorithmic problem-solving.
 
-## Resources 📚
+## Resources 📚 {#resources}
 
 - [![C++ Documentation](https://img.shields.io/badge/C++-Documentation-blue)](https://en.cppreference.com/)
 - [![LeetCode](https://img.shields.io/badge/LeetCode-Problem%20Solving-brightgreen)](https://leetcode.com/)
 - [![YouTube](https://img.shields.io/badge/YouTube-Learning-red)](https://www.youtube.com/)
 - [![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-Concept%20Clarity-orange)](https://www.geeksforgeeks.org/)
 
-## Tools 🛠️
+## Tools 🛠️ {#tools}
 
 - [![Google](https://img.shields.io/badge/Google-Search-informational)](https://www.google.com/)
 - [![Visual Studio Code](https://img.shields.io/badge/VS%20Code-IDE-blue)](https://code.visualstudio.com/)
 - [![Replit](https://img.shields.io/badge/Replit-Online%20IDE-lightgrey)](https://replit.com/)
 - [![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-brightgreen)](https://github.com/)
 
-## Contribute 🤝
+## Contribute 🤝 {#contribute}
 
 Feel free to contribute by:
 
@@ -75,11 +75,12 @@ Feel free to contribute by:
 5. Pushing to the branch (`git push origin feature/your-feature`).
 6. Creating a new Pull Request.
 
-## Connect 🌐
+## Connect 🌐 {#connect}
 
 Let's connect! Share your thoughts, feedback, or questions:
 
-- Email: your.email@example.com
-- Twitter: [@YourTwitterHandle](https://twitter.com/YourTwitterHandle)
+- Email: shubhamgetmail@gmail.com
+- Linkdin: [@shubhamsharmaer](https://linkedin.com/shubhamsharmaer)
+- Twitter: [@shubhamsharmaer](https://twitter.com/shubhamsharmaer)
 
 Happy coding! 🚀
