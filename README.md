@@ -6,14 +6,14 @@ Welcome to my Data Structures and Algorithms (DSA) learning repository! 🚀 Her
 
 - [Overview](#overview)
 - [Repository Structure](#repository-structure-)
-- [Daily Concepts](#daily-concepts)
-- [Assignments](#assignments)
-- [Debugging](#debugging)
-- [Patterns Qs](#patterns-qs)
-- [Resources](#resources)
-- [Tools](#tools)
-- [Contribute](#contribute)
-- [Connect](#connect)
+- [Daily Concepts](#daily-concepts-)
+- [Assignments](#assignments-)
+- [Debugging](#debugging-)
+- [Patterns Qs](#patterns-qs-)
+- [Resources](#resources-)
+- [Tools](#tools-)
+- [Contribute](#contribute-)
+- [Connect](#connect-)
 
 ## Overview 🌟
 
