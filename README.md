@@ -2,6 +2,10 @@
 
 Welcome to my Data Structures and Algorithms (DSA) learning repository! 🚀 Here, I document my daily progress, practice problems, and assignments to enhance my DSA skills.
 
+<div align="center">
+<img src = "https://source.unsplash.com/1200x400/?programming,coding" >
+</div>
+
 ## Table of Contents
 
 - [Overview](#overview)
