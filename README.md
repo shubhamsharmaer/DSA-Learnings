@@ -80,7 +80,7 @@ Feel free to contribute by:
 Let's connect! Share your thoughts, feedback, or questions:
 
 - Email: shubhamgetmail@gmail.com
-- Linkdin: [@shubhamsharmaer](https://linkedin.com/shubhamsharmaer)
+- Linkdin: [@shubhamsharmaer](https://www.linkedin.com/in/shubhamsharmaer/)
 - Twitter: [@shubhamsharmaer](https://twitter.com/shubhamsharmaer)
 
 Happy coding! 🚀
