@@ -5,7 +5,7 @@ Welcome to my Data Structures and Algorithms (DSA) learning repository! 🚀 Her
 ## Table of Contents
 
 - [Overview](#overview)
-- [Repository Structure](#Repository-Structure-🌟)
+- [Repository Structure](https://github.com/shubhamsharmaer/DSA-Learningstab=readme-ov-file#repository-structure-)
 - [Daily Concepts](#daily-concepts)
 - [Assignments](#assignments)
 - [Debugging](#debugging)
