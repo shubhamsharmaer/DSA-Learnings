@@ -1,8 +1,15 @@
-// NOTES: Reverse Queue Using Stack
-// NOTES: Approch:
-// NOTES: Make a Reverse(), Stack, Queue
-// NOTES: Pop Queue untill empty, Push Popped Element -> Stack
-// NOTES: Pop Stack untill empty, Push Popped Element -> Queue
+// NOTES: Reverse Queue
+
+// NOTES: Approch 1 -> Using Stack
+// STEP 1: Make a Reverse(), Stack, Queue
+// STEP 2: Pop Queue untill empty, Push Popped Element -> Stack
+// STEP 3: Pop Stack untill empty, Push Popped Element -> Queue
+
+// NOTES: Approch 2 -> Using Recursion
+// STEP 1: Store q.front() -> temp var
+// STEP 2: pop();
+// STEP 3: Call recursive(q);
+// STEP 4: push() temp -> queue
 
 #include <iostream>
 #include <stack>
@@ -20,6 +27,8 @@ void printqueue(queue<int> q)
     }
     cout << endl;
 }
+
+// NOTES: Approch 1
 
 void reversequeue(queue<int> &q)
 {
@@ -47,6 +56,23 @@ void reversequeue(queue<int> &q)
     printqueue(q);
 }
 
+// NOTES: Approch 2
+void reverse(queue<int> &q)
+{
+    // base case
+    if (q.empty())
+    {
+        return;
+    }
+    // processing
+    int temp = q.front();
+    q.pop();
+    // recursive call
+    reverse(q);
+    // push into queue
+    q.push(temp);
+}
+
 int main()
 {
     queue<int> q;
@@ -59,5 +85,10 @@ int main()
     q.push(60);
 
     // call the fun()
-    reversequeue(q);
+    // reversequeue(q);
+    cout << "Queue: ";
+    printqueue(q);
+    reverse(q);
+    cout << "Reverse Queue: ";
+    printqueue(q);
 }
