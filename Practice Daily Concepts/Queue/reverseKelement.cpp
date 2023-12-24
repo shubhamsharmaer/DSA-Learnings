@@ -32,4 +32,13 @@ void reversequeue(queue<int> &q, int k)
 
 int main()
 {
+    queue<int> q;
+    q.push(10);
+    q.push(20);
+    q.push(30);
+    q.push(40);
+    q.push(50);
+    q.push(60);
+
+    printqueue(q);
 }
