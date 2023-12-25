@@ -16,12 +16,28 @@ void print(queue<int> q)
 void interleavequeue(queue<int> &first)
 {
     // queue bnao
+    queue<int> second;
+    int k = first.size();
+    for (int i = 0; i < k / 2; i++)
+    {
+        int temp = first.front();
+        // pop 1/2 element
+        first.pop();
+        // push them into 2nd queue
+        second.push(temp);
+    }
+    // merge them
+    for (int i = 0; i < k / 2; i++)
+    {
+        int temp = second.front();
+        second.pop();
+        first.push(temp);
 
-    // pop 1/2 element
-
-    // push them into 2nd queue
+        temp = first.front();
+        first.pop();
+        first.push(temp);
+    }
 }
-// merge them
 
 int main()
 {
@@ -33,5 +49,8 @@ int main()
     q.push(50);
     q.push(60);
     cout << "Queue: ";
+    print(q);
+    interleavequeue(q);
+    cout << "Interleave Queue: ";
     print(q);
 }
