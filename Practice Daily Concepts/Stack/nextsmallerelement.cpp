@@ -20,12 +20,12 @@ vector<int> nextsmallerelement(int *arr, int size, vector<int> &next)
     {
         int curr = arr[i];
 
-        while (st.top() >= curr)
+        while (st.top() != -1 && arr[st.top()] >= curr)
         {
             st.pop();
         }
         next[i] = st.top();
-        st.push(curr);
+        st.push(i);
     }
     return next;
 }
@@ -39,12 +39,12 @@ vector<int> prevtsmallerelement(int *arr, int size, vector<int> &prev)
     {
         int curr = arr[i];
 
-        while (st.top() >= curr)
+        while (st.top() != -1 && arr[st.top()] >= curr)
         {
             st.pop();
         }
         prev[i] = st.top();
-        st.push(curr);
+        st.push(i);
     }
     return prev;
 }
