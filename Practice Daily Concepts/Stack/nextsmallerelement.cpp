@@ -51,8 +51,8 @@ vector<int> prevtsmallerelement(int *arr, int size, vector<int> &prev)
 
 int main()
 {
-    int arr[5] = {8, 4, 6, 2, 3};
-    int size = 5;
+    int arr[6] = {2, 1, 5, 6, 2, 3};
+    int size = 6;
 
     vector<int> next(size);
     next = nextsmallerelement(arr, size, next);
