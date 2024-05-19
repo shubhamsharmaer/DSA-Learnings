@@ -3,5 +3,6 @@
     "files.associations": {
         "iostream": "cpp",
         "vector": "cpp"
-    }
+    },
+    "cmake.configureOnOpen": false
 }
