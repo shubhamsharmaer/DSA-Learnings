@@ -7,7 +7,10 @@ using namespace std;
 
 int findtar(int arr[], int n, int tar){
     int s = 0, e = n - 1;
-    int mid = (s + e) / 2;
+    // NOTES: normal mid calculation -> can be Overflow
+    // int mid = (s + e) / 2;
+    // NOTES: Best Practice -> cannot be Overflow
+    int mid = s + (e - s) / 2;
     int ans = -1;
     // find mid
     while( s <= e){
