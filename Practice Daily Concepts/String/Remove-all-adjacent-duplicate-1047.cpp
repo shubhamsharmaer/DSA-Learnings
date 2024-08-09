@@ -1,4 +1,4 @@
-// NOTES:  Remove all adjacent duplicate characters
+// NOTES:  Remove all adjacent duplicate characters - 1047
 
 // STEPS: Define the Function: string removeDuplicates(string s)
 // STEPS: Initialize an Empty String:
